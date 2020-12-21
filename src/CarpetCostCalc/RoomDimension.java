@@ -1,8 +1,14 @@
 package CarpetCostCalc;
 
 public class RoomDimension {
-    
-    public double area(double roomLength, double roomWidth)
+
+    double roomLength;
+    double roomWidth;
+   public RoomDimension(double width, double length){
+        this.roomWidth = width;
+        this.roomLength = length;
+    }
+    public double area()
     {
         return roomLength * roomWidth;
     }
